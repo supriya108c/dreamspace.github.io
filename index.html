@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Designs by Sarah</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            color: #2b2b2b;
+            background: #ffffff;
+        }
+
+        /* NAV */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 8%;
+            position: fixed;
+            width: 100%;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            height: 90vh;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .hero-img {
+            flex: 1;
+            min-width: 300px;
+            background: url("https://images.unsplash.com/photo-1600585154154-425a5bd2ba09?auto=format&fit=crop&w=1600&q=80") 
+                        center/cover no-repeat;
+        }
+
+        /* SECTION TITLES */
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        /* PORTFOLIO */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #f4f4f4;
+            padding: 40px 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: #bd6d00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#">Sarah Kitchens</a>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <div>
+                <h1>Modern, Functional & Luxurious Kitchen Designs</h1>
+                <p>
+                    I create bespoke kitchens tailored to your home's style and your lifestyle.  
+                    From minimalist modern layouts to warm classic designs — let’s build your perfect space.
+                </p>
+            </div>
+        </div>
+
+        <div class="hero-img"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
+        <p style="max-width: 750px; margin: auto; text-align: center; line-height: 1.7;">
+            With over a decade of experience in interior and kitchen design,  
+            I specialize in creating beautiful, practical, highly customized kitchens that elevate everyday living.
+        </p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <img src="https://images.unsplash.com/photo-1600585154204-5c8af75ec4d7?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Get in Touch</h2>
+        <div class="contact-box">
+            <p>Interested in designing your dream kitchen?</p>
+            <p>Email me at <a href="mailto:design@sarahtkitchens.com">design@sarahtkitchens.com</a></p>
+            <p>Phone: <strong>(555) 123-4567</strong></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Sarah’s Kitchen Design Studio. All rights reserved.
+    </footer>
+
+</body>
+</html>
